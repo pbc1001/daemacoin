@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OddvsEven</title>
+    <link rel="stylesheet" href="../CSS/SSS.CSS" />
+  </head>
+  <body>
+    <header>
+      <h1 class="head_title">홀짝 게임</h1>
+    </header>
+    <main>
+      <section class="main_title">
+        <div>
+          <span class="choice_num">홀? 짝?</span>
+        </div>
+        <div class="random_num-container">
+            <span class="random_num off"></span>
+        </div>
+      </section>
+      <div class="Container">
+        <div class="odd_container">
+          <button class="odd"><img class="button" src="../CSS/Button_Icon_BlueSky.svg" alt="">홀</button>
+        </div>
+        <div class="even_container">
+          <button class="even"><img class="button" src="../CSS/Button_Icon_Red.svg" alt="">짝</button>
+        </div>
+      </div>
+      <div class="start-container">
+        <div class="off suc">
+          성공
+        </div>
+        <div>
+            <button class="start">시작</button>
+        </div>
+        <div class="off fail">
+          실패
+        </div>
+        <audio src="" class="music"></audio>
+      </div>
+    </main>
+    <script src="../JS/sss.js"></script>
+  </body>
+</html>
