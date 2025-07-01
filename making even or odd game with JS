@@ -1,0 +1,51 @@
+const random_num = document.querySelector(".random_num");
+const odd = document.querySelector(".odd");
+const even = document.querySelector(".even");
+const start = document.querySelector(".start");
+const success = document.querySelector(".suc");
+const fail = document.querySelector(".fail");
+const music = document.querySelector(".music");
+
+let random = Math.floor(Math.random() * 3); // 0, 1, 2 중 하나
+
+start.addEventListener("click", () => {
+  // 요소를 숨김 처리
+  random_num.classList.add("off");
+  success.classList.add("off");
+  fail.classList.add("off");
+
+  // 새로운 난수 생성
+  random = Math.floor(Math.random() * 3); // 0, 1, 2 중 하나
+
+  // 요소 내용 초기화
+  random_num.textContent = ""; // 이 부분이 초기화 역할
+
+  // 난수 표시 (화면에 보여주기)
+  random_num.textContent = random;
+
+  console.log("start!");
+});
+
+odd.addEventListener("click", () => {
+  random_num.classList.remove("off");
+  music.play();
+  if (random % 2 != 0) {
+    console.log("success");
+    success.classList.remove("off");
+  } else {
+    console.log("fail..");
+    fail.classList.remove("off");
+  }
+});
+
+even.addEventListener("click", () => {
+  random_num.classList.remove("off");
+
+  if (random % 2 == 0) {
+    console.log("success");
+    success.classList.remove("off");
+  } else {
+    console.log("fail..");
+    fail.classList.remove("off");
+  }
+});
