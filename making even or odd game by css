@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1880px;
+    height: 10vh;
+    background-color: red ;
+    border: 20px yellow dotted;
+}
+
+main{
+    width: 1920px;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.head_title {
+    font-weight: 600;
+    color: white;
+}
+
+.main_title {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.choice_num {
+    font-size: 50px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.off {
+    opacity: 0%;
+}
+
+.Container {
+    width: 1920px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.odd_container {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.odd {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    animation: move 3s infinite;
+}
+
+.even_container {
+    width: 100px;
+    height: 100px;
+}
+
+.even {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+.random_num-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.random_num{
+    font-size: 40px;
+}
+
+.start-container {
+    width: 1920px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.start {
+    color: white;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    animation: move 1000s infinite;
+}
+
+.suc {
+    color: blue;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.fail {
+    color: red;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+}
