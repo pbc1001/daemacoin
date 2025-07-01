@@ -1,0 +1,120 @@
+import styled from '@emotion/styled'
+
+function Login() {
+    return(
+        <Body>
+        <Container>
+            <div>
+                <LoginText>로그인</LoginText>
+                <Line></Line>
+            </div>            
+            <div>
+                <IdPw>아이디</IdPw>
+                <IdPwBox type= "text" placeholder='아이디를 입력해주세용' />
+                <IdPw>비밀번호</IdPw>
+                <IdPwBox type="password" placeholder='비밀번호를 입력해 주세용' />
+
+            </div>
+            <Footer>
+                <LoginButton>로그인</LoginButton>
+                <BtnText>계정이 없으신가용?<a href="https://dsmhs.djsch.kr/join.do"><BtnTextB>회원가입</BtnTextB></a></BtnText>
+            </Footer>
+        </Container>
+    </Body>
+    )
+}
+export default Login;
+
+const Body = styled.body`
+    width: 100vw;
+    height: 100vh;   
+
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+`
+
+
+
+const Container = styled.div`
+
+    width: 483px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-sizing: border-box;
+`
+
+const Footer = styled.div`
+    width: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+const Box = styled.div`
+    margin-bottom
+`
+
+const Line = styled.div`
+    width: 480px;
+    margin-top: 23px;
+    height: 0px;
+    border: 1px solid #3d8aff;
+    margin-bottom: 56px;
+`
+
+const LoginText = styled.div`
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+`
+
+
+const IdPw = styled.p`
+    color: #555555;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+`
+
+const IdPwBox = styled.input`
+    width: 480px;
+    height: 46px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 40px;
+`
+const LoginButton = styled.button`
+    width: 480px;
+    height: 50px;
+    background-color: #3d8aff;
+    margin-top: 28px;
+    margin-bottom: 17px;
+    opacity: 50%;
+    box-sizing: border-box;
+`
+
+const BtnText = styled.p`
+    color: #555555;
+    width: 480px;
+    margin-top: 0px;
+    margin-left: 142px;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+`
+
+const BtnTextB = styled.span`
+    color: #3d8aff;
+    font-weight: 600;
+`
