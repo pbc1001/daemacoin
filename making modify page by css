@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.post__top {
+  display: flex;
+  height: 90px;
+  margin-top: 67px;
+  margin-left: 360px;
+  gap: 20px;
+}
+
+.post__middle {
+  display: flex;
+  flex-direction: column;
+  width: 1189px;
+  height: 670px;
+  margin-left: 360px;
+  gap: 40px;
+}
+
+.post__bottom {
+  width: 1189px;
+  height: 176px;
+  margin-left: 360px;
+  align-items: center;
+}
+
+.post__top_text {
+  color: #999999;
+}
+
+.post__text_teext {
+  color: #555555;
+}
+
+.post__text_box1 {
+  display: flex;
+  width: 1189px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 4px;
+}
+
+.post__text_box2 {
+  display: flex;
+  width: 1189px;
+  height: 500px;
+  border: none;
+  background-color: #eeeeee;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 1px;
+  border-radius: 4px;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+}
+
+.button {
+  display: flex;
+  background-color: #3d8aff;
+  font-size: 15px;
+  color: white;
+  justify-content: center;
+  width: 1193px;
+  height: 49px;
+  border: none;
+  border-radius: 5px;
+}
+
+.post__button_text {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
+  padding-bottom: 4px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+::placeholder {
+  font-size: 18px;
+  text-indent: 14px;
+  padding-top: 12px;
+}
