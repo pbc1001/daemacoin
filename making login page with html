@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="/test/css/login.css">
+</head>
+<body class="con">
+
+    <div class="tae">
+
+        <div class="shin">
+            <h1>로그인</h1>
+            <hr style="border: 1px solid #3D8AFF;">
+        </div>
+        
+        <div class="shin">
+            <h3>로그인</h3>
+            <input type="text" placeholder="아이디를 입력해주세요" class="box">
+        </div>
+
+        <div class="shin">
+            <h3>비밀번호</h3>
+            <div id="pass">
+                <input type="password" placeholder="비밀번호를 입력해주세요" class="box" id="password">
+                <img src="../img/eye-img.svg" alt="show your password" id="img">
+            </div>
+            
+        </div>
+
+        <div class="shin">
+            <label id="save">
+                <span id="check"><input type="checkbox">아이디 저장</span>
+            </label>
+            
+        </div>
+
+        <div class="shin">
+            <button class="box">로그인</button>
+            <h4>계정이 없으신가요?<a href="https://www.naver.com" target="_blank" id="blue">회원가입</a></h4>
+        </div>
+    </div>
+</body>
+</html>
