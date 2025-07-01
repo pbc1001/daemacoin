@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modifyNoti</title>
+
+    <link rel="stylesheet" href="../css/modifyNodi.css" />
+  </head>
+  <body>
+    <div class="big__con">
+      <div class="post__top">
+        <h2 class="post__top_text">게시글 목록</h2>
+        <img class="img" src="../img/Vector1.svg" alt=">">
+        <h2 class="post__top_teext">게시글 수정</h2>
+      </div>
+      <div class="post__middle">
+        <div>
+          <h4>제목</h4>
+          <input
+            type="text"
+            class="post__text_box1"
+            placeholder="제목제목제목"
+          />
+        </div>
+        <div>
+          <h4>내용</h4>
+          <textarea
+            class="post__text_box2"
+            placeholder="내용내용내용"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="post__bottom">
+        <button class="button"><span class="post__button_text">수정완료</span></button>
+      </div>
+    </div>
+  </body>
+</html>
